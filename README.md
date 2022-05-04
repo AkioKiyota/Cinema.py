@@ -2,11 +2,11 @@
 
 With Cinema.py you can get tickets for cinema.
 
-Add/Remove.py will help you to add and remove movies on your current directory.
+Add_Remove.py will help you to add and remove movies on your current directory.
 All movies will be stored separately.
 
 All the movie datas will be stored.
 
-There is a example file named "Berk.txt" 
+There is a example file named "Movie.txt" 
 
-In the Add/Remove.py file you dont need to add ".txt".
+In the Add_Remove.py file you dont need to add ".txt".
