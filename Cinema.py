@@ -2,11 +2,11 @@ import os
 import glob
 
 def getMovies():
-    movies = glob.glob(r"/Cinema/Berk.txt")
+    movies = glob.glob(r"Berk.txt")
     return movies
 
 def getChairs(mov):
-    with open(f"Cinema/{str(mov).strip()}.txt", "r") as db: ###   DEĞİŞTİRİLECEK   ###
+    with open(f"{str(mov).strip()}.txt", "r") as db:
         whole_mov = db.read()
         list = whole_mov.split("\n")
         return list
@@ -30,8 +30,8 @@ def cinema():
     chairNum = input("Which chair do you want? \n")
     if chairs[int(chairNum)] == "empty":
         chairs[int(chairNum)] = name
-        os.remove(f"Cinema/{selectedMov}.txt")
-        with open(f"Cinema/{selectedMov}.txt", "w+") as db:
+        os.remove(f"{selectedMov}.txt")
+        with open(f"{selectedMov}.txt", "w+") as db:
             db.write("\n".join(chairs))
         ticket = f"|  Name: {name},\n|  Movie: {selectedMov},\n|  Chair Number: {chairNum}."
         print(ticket)
